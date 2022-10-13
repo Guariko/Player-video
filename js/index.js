@@ -11,7 +11,12 @@ const videoContent = document.querySelector(".video__content");
 const barMaxWidth = getComputedStyle(videoContent)["width"].replace("px", "");
 
 video.muted = true;
+
 video.play();
+
+if (video.paused) {
+  video.play();
+}
 
 let videoDuration = null;
 
