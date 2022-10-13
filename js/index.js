@@ -58,7 +58,7 @@ setInterval(function () {
     buttonContainer
   );
   if (!videoDuration) {
-    location.reload();
+    video.play();
   }
 
   if (
